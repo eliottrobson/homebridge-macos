@@ -1,6 +1,6 @@
 {
   "name": "homebridge-macos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Homebridge plugin to track Mac OS events",
   "main": "index.js",
   "repository": {
