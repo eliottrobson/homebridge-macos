@@ -1,4 +1,5 @@
 {
     "platform": "homebridge-macos.MacOS",
-    "name": "Eliott's iMac"
+    "name": "Eliott's iMac",
+    "poll": 3000
 }

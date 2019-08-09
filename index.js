@@ -22,6 +22,7 @@ function MacOS(log, config, api) {
 	this.sensor = {
 		name: config["name"]
 	};
+	this.poll = config["poll"] || 5000;
 
 	const self = this;
 
@@ -70,7 +71,7 @@ MacOS.prototype.configureAccessory = function(accessory) {
 MacOS.prototype.appBeginListening = function() {
 	// Check the screen status every 5 seconds
 	this.appCheckScreen();
-	setInterval(this.appCheckScreen.bind(this), 5000);
+	setInterval(this.appCheckScreen.bind(this), this.poll);
 }
 
 MacOS.prototype.appCheckScreen = function() {
