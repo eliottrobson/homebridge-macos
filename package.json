@@ -1,0 +1,21 @@
+{
+  "name": "homebridge-macos",
+  "version": "0.0.1",
+  "description": "Homebridge plugin to track Mac OS events",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliottrobson/homebridge-macos.git"
+  },
+  "author": "Eliott Robson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eliottrobson/homebridge-macos/issues"
+  },
+  "homepage": "https://github.com/eliottrobson/homebridge-macos#readme",
+  "keywords": "homebridge-plugin",
+  "engines": {
+    "node": ">=12.0.0",
+    "homebridge": ">=0.2.0"
+  }
+}
