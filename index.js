@@ -52,6 +52,7 @@ function MacOS(log, config, api) {
           .setCharacteristic(Characteristic.Model, "MacOS Sensor")
           .setCharacteristic(Characteristic.SerialNumber, self.sensor.name);
 
+        self.sensor.state = null;
         self.appBeginListening();
 	});
 }
