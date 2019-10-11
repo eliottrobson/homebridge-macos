@@ -15,6 +15,12 @@ module.exports = function(homebridge) {
 };
 
 function MacOS(log, config, api) {
+	if (!config) {
+        log.warn("Ignoring homebridge-macos because it is not configured");
+        this.disabled = true;
+        return;
+	}
+	
 	// Setup dependencies
 	this.log = log;
 	this.api = api;

@@ -20,7 +20,7 @@ Configure in homebridge config
 
 # Debugging
 ```
-DEBUG=* /usr/local/bin/homebridge -D -U ~/Documents/homebridge-dev -P ~/Documents/Source/homebridge-macos
+DEBUG=* /usr/local/bin/homebridge -D -U ~/Documents/Homebridge/homebridge-dev -P ~/Documents/Source/homebridge-macos
 ```
 
 # Config
