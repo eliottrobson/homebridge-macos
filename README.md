@@ -3,10 +3,8 @@ Homebridge plugin to track Mac OS events (screen on / off)
 
 # Installation
 
-Install the plugin
-```
-npm i homebridge-macos
-```
+View the latest version at the github package registry:
+https://github.com/eliottrobson/homebridge-macos/packages/35185
 
 Configure in homebridge config
 ```
