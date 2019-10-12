@@ -15,20 +15,20 @@ module.exports = function(homebridge) {
 };
 
 function MacOS(log, config, api) {
-	if (!config) {
-        log.warn("Ignoring homebridge-macos because it is not configured");
-        this.disabled = true;
-        return;
-	}
-	
 	// Setup dependencies
 	this.log = log;
 	this.api = api;
 	this.accessories = {};
 	this.sensor = {
-		name: config["name"]
+		name: config["name"] || ""
 	};
 	this.poll = config["poll"] || 5000;
+
+	if (!config) {
+        log.warn("Ignoring homebridge-macos because it is not configured");
+        this.disabled = true;
+        return;
+	}
 
 	const self = this;
 
@@ -66,6 +66,11 @@ function MacOS(log, config, api) {
 
 // Invoked when homebridge tries to restore cached accessory
 MacOS.prototype.configureAccessory = function(accessory) {
+	if (this.disabled) {
+		this.api.unregisterPlatformAccessories(pluginName, platformName, [ accessory ]);
+		return;
+	}
+	
     this.log("Configuring '" + accessory.displayName + "' sensor.");
     this.accessories[accessory.UUID] = accessory;
 
