@@ -3,14 +3,13 @@ Homebridge plugin to track Mac OS events (screen on / off)
 
 # Installation
 
-Install the plugin
+## Install the plugin
 ```
-npm config set registry "https://npm.pkg.github.com"
-sudo npm install @eliottrobson/homebridge-macos -g
+sudo npm install @eliottrobson/homebridge-macos -g --registry "https://npm.pkg.github.com"
 ln -s /usr/local/lib/node_modules/@eliottrobson/homebridge-macos /usr/local/lib/node_modules/homebridge-macos-@eliottrobson
 ```
 
-Configure in homebridge config
+## Configure in homebridge config
 ```
 {
     "platform": "homebridge-macos.MacOS",
@@ -18,7 +17,6 @@ Configure in homebridge config
     "poll": 3000
 }
 ```
-
 
 # Debugging
 ```
