@@ -7,7 +7,7 @@ Install the plugin
 ```
 npm config set registry "https://npm.pkg.github.com"
 sudo npm install @eliottrobson/homebridge-macos -g
-ln -s /usr/local/lib/node_modules/@eliottrobson/homebridge-macos /usr/local/lib/node_modules/homebridge-@eliottrobson-macos
+ln -s /usr/local/lib/node_modules/@eliottrobson/homebridge-macos /usr/local/lib/node_modules/homebridge-macos-@eliottrobson
 ```
 
 Configure in homebridge config
